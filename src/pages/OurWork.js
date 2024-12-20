@@ -35,7 +35,7 @@ const OurWork = () => {
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/media-fusion-portfolio/work/the-athlete">
+        <Link to="/work/the-athlete">
           <Hide>
             <motion.img variants={photoAnim} src={athlete} alt="athlete" />
           </Hide>
@@ -44,7 +44,7 @@ const OurWork = () => {
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
         <h2>The Racer</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/media-fusion-portfolio/work/the-racer">
+        <Link to="/work/the-racer">
           <img src={theracer} alt="theracer" />
         </Link>
       </Movie>
@@ -56,7 +56,7 @@ const OurWork = () => {
       >
         <h2>Good Times</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/media-fusion-portfolio/work/good-times">
+        <Link to="/work/good-times">
           <img src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
@@ -71,7 +71,7 @@ const Work = styled(motion.div)`
   align-items: center;
   min-height: 60vh;
   overflow: hidden;
-  padding: 0rem 3rem;
+  padding: 0.5rem 3rem 0rem 3rem;
   font-weight: 600;
   h2 {
     padding: 0.7rem 0rem;

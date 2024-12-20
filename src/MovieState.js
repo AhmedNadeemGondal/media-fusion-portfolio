@@ -12,7 +12,7 @@ export const MovieState = () => {
       title: "The Athlete",
       mainImg: athlete,
       secondaryImg: athlete2,
-      url: "/media-fusion-portfolio/work/the-athlete",
+      url: "/work/the-athlete",
       awards: [
         {
           title: "Truly A masterpiece",
@@ -34,7 +34,7 @@ export const MovieState = () => {
     {
       title: "Good Times",
       mainImg: goodtimes,
-      url: "/media-fusion-portfolio/work/good-times",
+      url: "/work/good-times",
       secondaryImg: goodtimes2,
       awards: [
         {
@@ -57,7 +57,7 @@ export const MovieState = () => {
     {
       title: "The Racer",
       mainImg: theracer,
-      url: "/media-fusion-portfolio/work/the-racer",
+      url: "/work/the-racer",
       secondaryImg: theracer2,
       awards: [
         {

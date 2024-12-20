@@ -8,6 +8,7 @@ const GLobalStyle = createGlobalStyle`
     }
 
     html{
+        overflow-y: overlay;
         @media (max-width:1440px){
             font-size:75%;
         }
@@ -59,6 +60,24 @@ const GLobalStyle = createGlobalStyle`
     a{
         font-size:1.1rem;
     }
+    /* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 6px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 3px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+
+/* ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} */
+
 `;
 
 export default GLobalStyle;

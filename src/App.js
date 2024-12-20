@@ -15,16 +15,10 @@ function App() {
       <GlobalStyle />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/media-fusion-portfolio" element={<AboutUs />} />
-          <Route path="/media-fusion-portfolio/work" element={<OurWork />} />
-          <Route
-            path="/media-fusion-portfolio/work/:id"
-            element={<MovieDetail />}
-          />
-          <Route
-            path="/media-fusion-portfolio/contact"
-            element={<ContactUs />}
-          />
+          <Route path="/" element={<AboutUs />} />
+          <Route path="/work" element={<OurWork />} />
+          <Route path="/work/:id" element={<MovieDetail />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </AnimatePresence>
     </div>
@@ -33,4 +27,4 @@ function App() {
 
 export default App;
 
-// "homepage": "https://AhmedNadeemGondal.github.io/media-fusion-portfolio",
+// "homepage": "https:/AhmedNadeemGondal.github.io/",

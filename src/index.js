@@ -9,7 +9,7 @@ const Router =
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/media-fusion-portfolio">
       <App />
     </Router>
   </React.StrictMode>

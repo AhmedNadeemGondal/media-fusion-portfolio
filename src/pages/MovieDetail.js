@@ -9,7 +9,6 @@ import ScrollTop from "../components/ScrollTop";
 const MovieDetail = () => {
   const location = useLocation();
   const url = location.pathname;
-  console.log(url);
 
   const [movies, setMovies] = useState(MovieState);
 

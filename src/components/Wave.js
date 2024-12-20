@@ -7,7 +7,7 @@ const Wave = () => {
     <WaveSvg
       width="1440"
       height="363"
-      viewBox="0 0 1440 363"
+      viewBox="0 0 1400 363"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -28,5 +28,7 @@ const WaveSvg = styled.svg`
   position: absolute;
   left: 0;
   z-index: 1;
+  /* overflow: hidden; */
+  width: 100%;
 `;
 export default Wave;
