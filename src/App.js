@@ -2,7 +2,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import MovieDetail from "./pages/MovieDetail";
-import GLobalStyle from "./components/GlobalStyle";
+import GlobalStyle from "./components/GlobalStyle";
 import Nav from "./components/Nav";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -12,13 +12,19 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <GLobalStyle />
+      <GlobalStyle />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<AboutUs />} />
-          <Route path="/work" element={<OurWork />} />
-          <Route path="/work/:id" element={<MovieDetail />} />
-          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/media-fusion-portfolio" element={<AboutUs />} />
+          <Route path="/media-fusion-portfolio/work" element={<OurWork />} />
+          <Route
+            path="/media-fusion-portfolio/work/:id"
+            element={<MovieDetail />}
+          />
+          <Route
+            path="/media-fusion-portfolio/contact"
+            element={<ContactUs />}
+          />
         </Routes>
       </AnimatePresence>
     </div>
@@ -26,3 +32,5 @@ function App() {
 }
 
 export default App;
+
+// "homepage": "https://AhmedNadeemGondal.github.io/media-fusion-portfolio",

@@ -7,18 +7,16 @@ import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
 
 const MovieDetail = () => {
-  //   const navigate = useNavigate(); // For navigation (like history.push)
-  const location = useLocation(); // To access the current path
-  const url = location.pathname; // Use location.pathname instead
+  const location = useLocation();
+  const url = location.pathname;
   console.log(url);
 
-  // const [movies, setMovies] = useState(MovieState);
-  const movies = MovieState;
+  const [movies, setMovies] = useState(MovieState);
+
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
-    // console.log(1, currentMovie);
     setMovie(currentMovie[0]);
   }, [movies, url]);
   return (
