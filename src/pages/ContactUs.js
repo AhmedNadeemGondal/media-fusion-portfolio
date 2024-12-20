@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const ContactUs = () => {
   return (
     <ContactStyle
@@ -20,20 +23,38 @@ const ContactUs = () => {
       <div>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
+            <a
+              href="https://wa.me/03335581734"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <StyledIcon icon={faWhatsapp} />
+            </a>
             <h2>Send us a message.</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
+            <a
+              href="ahmednadeemgondal92@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <StyledIcon icon={faEnvelope} />
+            </a>
             <h2>Send an email.</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
-            <h2>Socail Media.</h2>
+            <a
+              href="https://www.linkedin.com/in/ahmed-nadeem-7a30a4111/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <StyledIcon icon={faLinkedin} />
+            </a>
+            <h2>Social Media.</h2>
           </Social>
         </Hide>
       </div>
@@ -59,11 +80,15 @@ const Title = styled.div`
 const Hide = styled.div`
   overflow: hidden;
 `;
-const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: #353535;
+
+const StyledIcon = styled(FontAwesomeIcon)`
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  color: #353535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 const Social = styled(motion.div)`
   display: flex;
