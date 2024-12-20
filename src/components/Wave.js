@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const Wave = () => {
   return (
     <WaveSvg
-      width="1390"
+      width="1536"
       height="363"
-      viewBox="0 0 1390 363"
+      viewBox="0 0 1536 363"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
